@@ -46,7 +46,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    
+
 }
 #secciondatos p{
     font-size:1.4rem;
@@ -59,7 +59,6 @@ nav ul{
                          "area2 area2 area3 area3"
                          "area4 area4 area5 area5";
 }
-
 #uno{
     grid-area: area1;
 }
@@ -75,8 +74,14 @@ nav ul{
 #cinco{
     grid-area: area5;
 }
-
-/* .caja{
-    padding: 1.5%;
-    font-size: 1.4rem;
-} */
+footer{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    list-style-type: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
