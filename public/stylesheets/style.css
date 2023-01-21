@@ -52,26 +52,27 @@ nav ul{
 }
 #seccioncontactenos{
     display: grid;
-    grid-template-areas: "area1 area2 area3 area4"
-                         "area5 area6 area7 area8"
-                         "area9 area9 area10 area10";
+    grid-template-areas: "area1 area1 area1 area1"
+                         "area2 area2 area3 area3"
+                         "area4 area4 area5 area5";
 }
+
 #uno{
     grid-area: area1;
 }
 #dos{
-    grid-area: area5;
+    grid-area: area2;
 }
 #tres{
-    grid-area: area9;
+    grid-area: area4;
 }
 #cuatro{
-    grid-area: area7;
+    grid-area: area3;
 }
 #cinco{
-    grid-area: area10;
+    grid-area: area5;
 }
-.caja{
+/* .caja{
     padding: 1.5%;
     font-size: 1.4rem;
-}
+} */
