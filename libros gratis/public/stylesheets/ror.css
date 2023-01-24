@@ -9,4 +9,50 @@
 body {
     margin: 0;
     padding: 0;
+    display: grid;
 }
+    /* grid-template-areas: "area1 area1 area1 area1 area1"
+                         "area2 area2 area2 area2 area8"
+                         "area2 area2 area3 area3 area8"
+                         "area4 area4 area3 area3 area8"
+                         "area4 area4 area12 area12 area9"
+                         "area4 area4 area5 area5 area9"
+                         "area4 area4 area6 area6 area9"
+                         "area4 area4 area6 area6 area10"
+                         "area4 area4 area6 area6 area10"
+                         "area4 area4 area7 area7 area10"
+                         "area4 area4 area7 area7 area11"
+                         "area4 area4 area7 area7 area11"
+                         "area4 area4 area7 area7 area11"; */
+/* }
+#a1{
+    grid: area1;
+}
+h1{
+    grid: area2;
+}
+#img1{
+    grid: area4;
+}
+#linea1{
+    grid: area3;
+}
+#linea2{
+    grid: area3;
+}
+#linea3{
+    grid: area12;
+}
+#parrafo1{
+    grid: area5;
+}
+h3{
+    grid: area6;
+}
+#link1{
+    grid: area6;
+}
+#lineafinal{
+    grid: area7;
+} */
+
