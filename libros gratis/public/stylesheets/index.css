@@ -9,13 +9,140 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 /* El elemento header tendrá una imagen de fondo */
+h1{
+    font-size: 3rem;
+}
+span{
+    font-weight: bold;
+}
 
 header {
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
+    display: grid;
+    grid-template-areas: "area1 area1 area1 area1 area1 area1"
+                         "area3 area3 area4 area5 area6 area7";
+    
+}
+#titulo1{
+    grid-area: area1;
+}
+#parrafo{
+    grid-area: area3;
+    /* padding: 1em; */
+}
+#imagen1{
+    grid-area: area4;
+    margin: 1em;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% ;
+    margin-bottom: 2% ;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+#imagen2{
+    grid-area: area5;
+    margin: 1em;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% ;
+    margin-bottom: 2% ;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+#imagen3{
+    grid-area: area6;
+    margin: 1em;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+#imagen4{
+    grid-area: area7; 
+    margin: 1em;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% ;
+    margin-bottom: 2% ;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+#seccionwebdevelopment{
+    display: grid;
+    grid-template-areas: "area1 area1 area1 area1 area1"
+                         "area2 area3 area4 area5 area6";
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+#titulo2{
+    grid-area: area1;
+}
+#imagen5{
+    grid-area: area2;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+
+}
+#imagen6{
+    grid-area: area3;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+
+}
+#imagen7{
+    grid-area: area4;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+
+}
+#imagen8{
+    grid-area: area5;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+
+}
+#imagen9{
+    grid-area: area6;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+
 }
