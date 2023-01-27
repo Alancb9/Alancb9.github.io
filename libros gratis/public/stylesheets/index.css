@@ -30,8 +30,7 @@ header {
     background-position: center center;
     display: grid;
     grid-template-areas: "area1 area1 area1 area1 area1 area1"
-                         "area3 area3 area4 area5 area6 area7";
-    
+                         "area3 area3 area4 area5 area6 area7";  
 }
 #titulo1{
     grid-area: area1;

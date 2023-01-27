@@ -11,7 +11,129 @@ body {
     padding: 0;
     display: grid;
 }
-    /* grid-template-areas: "area1 area1 area1 area1 area1"
+h1{
+    text-align: left;
+    width: auto;
+}
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#contenedor1{
+    width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    /* padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%; */
+}
+#uno{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    margin-right: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+    text-align: left;
+}
+
+#contenedor2{
+    font-size: 1.1rem;
+    padding: 15%;
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 0%;
+    padding-right: 2%;
+
+}
+/* #contenedor3{
+    padding: 20%;
+} */
+p{
+    text-align: justify;
+}
+#contenedor3{
+    width: 40%;
+    font-size: 2rem;
+    /* margin-left: 0.5rem;
+    border-color: red; */
+    text-align: center;
+    /* padding: 2%; */
+    border-left: 5px solid hsla(0, 91%, 41%, 0.596);
+    
+}
+#negrita1{
+    font-weight: bold;
+}
+#negrita2{
+    font-weight: bold;
+}
+#lineafinal{
+    text-align: right;
+}
+#siete{
+    background-color: white;
+    padding: 2%;
+    padding-top: 5%;
+    /* margin-top: 2%; */
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+}
+#diez{
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    padding-top: 5%;
+     margin-top: 2%; 
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+}
+#ocho{
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    padding-top: 5%;
+    margin-top: 2%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+}
+#nueve{
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    padding-top: 5%;
+     margin-top: 2%; 
+    padding-left: 5%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%); 
+}
+
+/* grid-template-areas: "area1 area1 area1 area1 area1"
                          "area2 area2 area2 area2 area8"
                          "area2 area2 area3 area3 area8"
                          "area4 area4 area3 area3 area8"
