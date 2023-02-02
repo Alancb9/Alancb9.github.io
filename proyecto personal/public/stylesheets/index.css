@@ -1,0 +1,46 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+#contenedor1{
+    padding: 0%;
+    height: 7.5rem;
+}
+#BarraNavegacion{
+    background-color: #e5afd5;
+    height: 7.5em;
+    border-bottom: 0.4rem solid #243b8c;
+    
+}
+#logo{
+    width: 10rem;
+    height: 7rem;
+    background-color: #e5afd5;
+}
+
+/* #MenuNavegacion ul li{
+    color: #243b8c;
+} */
+#titulo{
+    font-size: 2.5rem;
+    color: #243b8c;
+    font-weight: bold;
+}
+#contenedor1 button{
+    color: #243b8c;
+    border: 0.2rem solid #243b8c;
+}
+.nav-item{
+    /* font-size: large; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #243b8c;
+}
+#iconos div{
+    padding: 2.5%;
+    width: 5rem;
+    color: #243b8c;
+}
+
