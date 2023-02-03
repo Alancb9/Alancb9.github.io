@@ -5,6 +5,16 @@
     width: 100%;
     max-height: 400px;
 } */
+/* .navbar-custom {
+    background-color: black;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+} */
+#logo{
+    margin-left: 55px;
+}
 .slide{
     margin-top: 1px;
 }
