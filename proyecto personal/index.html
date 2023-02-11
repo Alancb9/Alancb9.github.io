@@ -14,8 +14,13 @@
 
 <body>
     <!-- Inicio del menu -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navbar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navbar py-3">
         <div class="container-fluid">
+
+            <div class="navbar-brand me-0">
+                <a href="#"><img id="logo" class="img-fluid" src="public/images/Logo Allan-01.svg" alt="Logo"></a>
+
+            </div>
 
             <!-- Boton hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -45,33 +50,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quienes somos</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        
+                    </li> -->
                 </ul>
-
-                <!-- Marca -->
-                <!-- <a class="navbar-brand ms-50" href="#">
-                    Piccoli Dolci
-                </a> -->
-
-                <!-- d-none d-md-inline-block -->
-                <!-- <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div id="logo" class="nav-item">
-                            <img class="img-fluid" src="public/images/Logo Allan-01.svg" alt="Logo">
-                        </div>
-                    </li>
-                </ul> -->
-                <div id="logo" class="nav-item d-none d-md-inline-block">
-                    <img class="img-fluid" src="public/images/Logo Allan-01.svg" alt="Logo">
-                </div>
 
                 <!-- linea de separacion -->
                 <hr class="text-white-50">
 
                 <!-- Seccion de iconos despleglables -->
-                <ul class="navbar-nav flex-row flex-wrap text-light">
+                <ul class="navbar-nav flex-row flex-wrap text-light me-4">
                     <li class="nav-item col-6 col-md-auto p-3">
                         <a class="nav-link" href="#">
-                            <i class="bi bi-person"></i>
+                            <i class="bi bi-person" data-toggle="tooltip" data-placement="top" title="Usuario"></i>
                         </a>
                         <!-- <small class="d-md-none ms-2">Mi Cuenta</small> -->
                     </li>
@@ -95,11 +86,11 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
     <!-- Carrucel de imagenes -->
-    <!-- d-none d-sm-block -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -113,6 +104,7 @@
         <!-- Imagenes -->
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <!-- <video src="public/videos/alfajores.mp4" class="rounded img-fluid d-block w-100"></video> -->
                 <img src="public/images/carrucel/foto4.PNG" class="rounded img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
@@ -147,132 +139,346 @@
         </button>
     </div>
 
-
     <!-- Productos main -->
-    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 mt-1 mx-2">
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>       
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-white bg-dark border-dark h-100">
-                <img src="public/images/cupcakes.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
 
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 mt-1 mx-5 bg-repeated">
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/Brownies.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/cheesecakedefrutilla.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/tiramisu.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/Tortadechocolate.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/tresleches.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/tortaconchocolate.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/pandenueces.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/imagenes final/tortafrutilla.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images" class="card-img-top d-block w-100" alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <div class="card text-dark bg-white border-dark h-100">
+                <div class="position-relative img-container">
+                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <div class="d-flex justify-content-center position-absolute img-buttons"
+                        style="bottom: 0; width: 100%">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Agregar a lista de deseos">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                        <button class="btn btn-secondary ml-3">
+                            <i class="bi bi-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <p>
+                        <i class="fa fa-map-marker"></i> Dirección ficticia, 123
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i> (123) 456-7890
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i> info@ejemplo.com
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#!">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Otras columnas aquí -->
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Icono de wsp -->
@@ -280,22 +486,16 @@
         <img src="public/images/iconos/wsp.svg" alt="WhatsApp Icon">
     </a>
 
-    <!-- <a href="#" target="_blank" class="fixed-icon">
-        <a href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram"></a>
-        <img  alt="Instagram Icon">
-    </a> -->
-
-
-
-
-
-
-
-
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

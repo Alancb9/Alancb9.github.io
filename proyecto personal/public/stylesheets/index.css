@@ -1,5 +1,18 @@
+/* homogenidad de tamanos */
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 16px;
+}
+
+
+/* logo e imagenes de carrucel */
+.navbar-brand{
+  width: 20rem;
+}
 #logo{
-    margin-left: 55px;
+    max-width: 80%;
 }
 .slide{
     margin-top: 1px;
@@ -7,6 +20,10 @@
 .slide img{
     height: 65vh;
 }
+
+
+
+/* icono de wsp */
 .fixed-icon {
   position: fixed;
   bottom: 20px;
@@ -29,6 +46,40 @@
 .col:hover {
     transform: scale(1.1);
 }
+
+
+
+/* animacion de los iconos */
+.img-container:hover .img-buttons {
+  visibility: visible;
+  opacity: 1;
+}
+.img-buttons {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.img-buttons button {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  background-color: #E5AFD5;
+  color: #fff;
+}
+.img-buttons button i {
+  color: #fff;
+}
+.img-buttons button:hover {
+  background-color: #333;
+}
+
+/* Tooltip */
+/* .tooltip{
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 10px !important;
+} */
+
 
 
 
