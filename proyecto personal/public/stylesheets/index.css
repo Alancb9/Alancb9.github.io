@@ -74,12 +74,14 @@ body{
 }
 
 /* Tooltip */
-/* .tooltip{
+.tooltip{
   background-color: #fff !important;
   color: #000 !important;
   border-radius: 10px !important;
+}
+/* .custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
 } */
-
 
 
 
