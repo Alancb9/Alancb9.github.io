@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="public/stylesheets/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -65,7 +69,7 @@
                         <a class="nav-link" href="#">
                             <i class="bi bi-person" data-toggle="tooltip" data-placement="top" title="Usuario"></i>
                         </a>
-                        <!-- <small class="d-md-none ms-2">Mi Cuenta</small> -->
+                        <small class="d-md-none ms-2">Mi Cuenta</small>
                     </li>
                     <li class="nav-item col-6 col-md-auto p-3">
                         <a class="nav-link" href="#">
@@ -75,7 +79,8 @@
                     </li>
                     <li class="nav-item col-6 col-md-auto p-3">
                         <a class="nav-link" href="#">
-                            <i class="bi bi-heart" data-toggle="tooltip" data-placement="top" title="lista de deseos"></i>
+                            <i class="bi bi-heart" data-toggle="tooltip" data-placement="top"
+                                title="lista de deseos"></i>
                         </a>
                         <small class="d-md-none ms-2">Favoritos</small>
                     </li>
@@ -106,38 +111,42 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- <video src="public/videos/alfajores.mp4" class="rounded img-fluid d-block w-100"></video> -->
-                <img src="public/images/carrucel/foto4.PNG" class="rounded img-fluid d-block w-100" alt="...">
+                <img src="public/images/carrucel/foto3.jpg" class="rounded img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <p id="textocarrucel" class="text-start">Disfrutalo hasta el final</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="public/images/carrucel/foto1.jpg" class="rounded img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <p id="textocarrucel" class="text-center">Todos tus postres favoritos, a un solo clic.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="public/images/carrucel/foto3.jpg" class="rounded img-fluid d-block w-100" alt="...">
+                <img src="public/images/carrucel/foto4.PNG" class="rounded img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p id="textocarrucel" class="text-end">Porque siempre es hora para un postrecito</p>
                 </div>
             </div>
 
         </div>
 
         <!-- Botones -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"
+            data-toggle="tooltip" data-placement="top" title="Atrás">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"
+            data-toggle="tooltip" data-placement="left" title="Siguiente">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+
+    <!-- Titulo de la seccion -->
+    <div class="container-fluid text-center pt-5">
+        <h1>Destacados</h1>
     </div>
 
     <!-- Productos main -->
@@ -151,24 +160,27 @@
                     <div class="d-flex justify-content-center position-absolute img-buttons"
                         style="bottom: 0; width: 100%">
                         <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a lista de deseos">
+                            title="Agregar a lista de deseos">
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Brownie</h5>
+                    <p class="card-text">Masa de negritos, al triple chocolate. Super húmedos en su interior y decorado
+                        con toppings a su elección.</p>
                 </div>
+                <ul id="hola" class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 2.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -183,20 +195,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Cheesecake de Frutos Rojos</h5>
+                    <p class="card-text">Tarta de queso cremosa, con base de galleta y decorada con coulis de frutos
+                        rojos de temporada.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 26.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -211,20 +226,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Tiramisú</h5>
+                    <p class="card-text">Base de bizcochos de vainilla humedecidos en almíbar de café, relleno de crema
+                        clásica de queso crema. Y café. Decorada con chocolate orgánico al 100%.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 25.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -239,20 +257,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Devil Chocolate Cake</h5>
+                    <p class="card-text">Torta de chocolate, humedecida en salsa de chocolate clásica. Rellena por 3
+                        capas de de ganache semiamargo.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 28.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -267,20 +288,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Dulce de 3 leches</h5>
+                    <p class="card-text">Bizcocho de vainilla, humedecido en baño clásico de 3 leches y decorado con
+                        merengue suizo.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 24.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -295,20 +319,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Selva Negra</h5>
+                    <p class="card-text">Bizcocho de vainilla humedecido en licor de cerezas, relleno de crema suprema
+                        de cerezas y decorado con virutas de chocolate semiamargo.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 28.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -323,20 +350,23 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Pan de Banano</h5>
+                    <p class="card-text">Masa base de banano, aromatizado con canela y vainilla. Decorado con glasé real
+                        y bananas caramelizadas.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 18.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
@@ -351,26 +381,30 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Strawberry Shortcake</h5>
+                    <p class="card-text">Bizcocho de vainilla humedecido, decorado con chantilly y fresas en almíbar.
+                    </p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 24.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
             <div class="card text-dark bg-white border-dark h-100">
                 <div class="position-relative img-container">
-                    <img src="public/images" class="card-img-top d-block w-100" alt="your-image">
+                    <img src="public/images/imagenes final/blueberrycupcake.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
                     <div class="d-flex justify-content-center position-absolute img-buttons"
                         style="bottom: 0; width: 100%">
                         <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
@@ -378,26 +412,30 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Blueberry Cupcakes</h5>
+                    <p class="card-text">Bizcocho de vainilla, humedecidos en almíbar de arándano y trozos de arándanos.
+                        Cubiertos de crumble clásico flameado.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 24.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
             <div class="card text-dark bg-white border-dark h-100">
                 <div class="position-relative img-container">
-                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <img src="public/images/imagenes final/pionono.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
                     <div class="d-flex justify-content-center position-absolute img-buttons"
                         style="bottom: 0; width: 100%">
                         <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
@@ -405,26 +443,30 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Pionono</h5>
+                    <p class="card-text">Bizcocho de vainilla, relleno de dulce de leche clásico y decorado con azúcar
+                        impalpable.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 18.00</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
             <div class="card text-dark bg-white border-dark h-100">
                 <div class="position-relative img-container">
-                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <img src="public/images/imagenes final/galletaschocochips.svg" class="card-img-top d-block w-100"
+                        alt="your-image">
                     <div class="d-flex justify-content-center position-absolute img-buttons"
                         style="bottom: 0; width: 100%">
                         <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
@@ -432,26 +474,29 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Chocolate chips cookies</h5>
+                    <p class="card-text">Galletas base de vainilla, con chispas de chocolate en el interior.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 1.50</li>
+                </ul>
             </div>
         </div>
         <div class="col p-4">
             <div class="card text-dark bg-white border-dark h-100">
                 <div class="position-relative img-container">
-                    <img src="public/images/cupcakes.jpg" class="card-img-top d-block w-100" alt="your-image">
+                    <img src="public/images/imagenes final/cheesecakevasco.svg" class="card-img-top d-block w-100 h-80"
+                        alt="your-image">
                     <div class="d-flex justify-content-center position-absolute img-buttons"
                         style="bottom: 0; width: 100%">
                         <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
@@ -459,67 +504,57 @@
                             <i class="fas fa-heart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Agregar a carrito">
+                            title="Agregar a carrito">
                             <i class="bi bi-cart"></i>
                         </button>
                         <button class="btn btn-secondary ml-3" data-toggle="tooltip" data-placement="top"
-                        title="Ampliar">
+                            title="Ampliar">
                             <i class="bi bi-fullscreen"></i>
                         </button>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title text-center">Cheesceake Vasco</h5>
+                    <p class="card-text">Tarta de queso con interior super cremoso y suave. Contrasta perfecto con la
+                        base y la superficie a punto.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">$ 26.00</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <p>
-                        <i class="fa fa-map-marker"></i> Dirección ficticia, 123
-                    </p>
-                    <p>
-                        <i class="fa fa-phone"></i> (123) 456-7890
-                    </p>
-                    <p>
-                        <i class="fa fa-envelope"></i> info@ejemplo.com
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#!">Servicios</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Acerca de</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Otras columnas aquí -->
-            </div>
-        </div>
-    </footer>
+    <div class="container-fluid px-0 mt-4">
+        <footer class="bg-dark d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+          <div class="col-md-4 col-sm-12 cl d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use src="public/images/Logo Allan-01.svg"/></svg>
+            </a>
+            <span class="text-white mb-3 mb-md-0">&copy; Piccoli Dolci Company, Todos los derechos reservados</span>
+          </div>
+          <div id="iconosfooter" class="col-md-4 col-sm-12 d-flex justify-content-end list-unstyled">
+            <a href="https://www.instagram.com/pdolci.ec/" class="link-light mx-3" target="_blank" width="50" height="50" data-toggle="tooltip" data-placement="top"
+            title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="link-light mx-3" width="50" height="50" data-toggle="tooltip" data-placement="top"
+            title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="link-light mx-3" width="50" height="50" data-toggle="tooltip" data-placement="top"
+            title="TikTok">
+                <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+        </footer>
+    </div>
+
 
 
     <!-- Icono de wsp -->
-    <a href="#" target="_blank" class="fixed-icon">
+    <a href="#" class="fixed-icon" data-toggle="tooltip" data-placement="top" title="WhatsApp">
         <img src="public/images/iconos/wsp.svg" alt="WhatsApp Icon">
     </a>
 

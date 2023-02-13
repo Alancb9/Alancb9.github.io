@@ -4,6 +4,7 @@ html{
 }
 body{
   font-size: 16px;
+  font-family: 'Varela Round';
 }
 
 
@@ -18,7 +19,14 @@ body{
     margin-top: 1px;
 }
 .slide img{
-    height: 65vh;
+    height: 87vh;
+}
+.card-text{
+  text-align: justify;
+}
+#textocarrucel{
+  /* font-family: 'Varela Round'; */
+  font-size: 4rem;
 }
 
 
@@ -47,6 +55,15 @@ body{
     transform: scale(1.1);
 }
 
+/* Destacados */
+.card-body .card-title{
+  font-family: 'Oleo Script';
+  font-size: 2rem;
+}
+h1{
+  font-family: 'Oleo Script';
+  font-size: 4rem;
+}
 
 
 /* animacion de los iconos */
@@ -79,9 +96,21 @@ body{
   color: #000 !important;
   border-radius: 10px !important;
 }
-/* .custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
-} */
+
+/* footer */
+footer{
+  font-size: 100%;
+}
+
+.col-md-5 .offset-md-1 .mb-3{
+  font-size: 100%;
+}
+
+#iconosfooter{
+  padding-right: 8rem;
+}
+
+
 
 
 
